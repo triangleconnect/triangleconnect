@@ -1,0 +1,267 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+$icon-font-path:      "../fonts/bootstrap";
+$fa-font-path:        "../fonts/fontawesome";
+
+
+@import "bootswatch-varaibles";
+@import "bootstrap-sass/bootstrap";
+@import "_bootswatch";
+@import "fontawesome/font-awesome";
+@import "utility-classes";
+
+// Local Variables //
+$bg-black-background: #232323;
+$bg-black-color: #acacac;
+$bg-black-headings-color: #FFFFFF;
+
+$bg-white-button: #FFFFFF;
+
+
+@function button-text-color($color) {
+  @if (lightness($color) > 60) {
+    @return  $brand-primary;
+  }
+  @else {
+    @return #FFFFFF;
+  }
+}
+
+// fix bootstrap bug
+body {
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color:	$brand-primary;
+}
+
+
+.page-content {
+	margin-top: 40px;
+}
+
+.bg-brand-primary {
+	background: $brand-primary;
+	color: button-text-color( $brand-primary );
+
+	.btn-default {
+		background: $bg-white-button;
+		border-color: $bg-white-button;
+		color: button-text-color( $bg-white-button );
+	}
+
+	.btn-default:active:focus {
+		background: $bg-white-button;
+		border-color: $bg-white-button;
+		color: button-text-color( $bg-white-button );
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: button-text-color( $brand-primary );
+	}
+
+}
+
+
+.hero {
+	height: 100%;
+	background-image: url('/assets/images/banner.jpg');
+	background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    color: white;
+
+    .navbar-inverse, 
+    .navbar-nav>.active>a, 
+    .navbar-inverse .navbar-nav>li>a:hover, 
+    .navbar-inverse .navbar-nav>li>a:focus{
+    	background: transparent;
+    	border-color: transparent;
+    }
+
+    h1 {
+    	color: #FFFFFF;
+    	font-size: 30px;
+    	font-weight: 500;
+    }
+
+    .lead {
+    	font-size: 18px;
+    }
+
+    &-text {
+    	background: transparentize($brand-primary, .15);
+	    margin: 30% 0 30% 0;
+		padding: 20px 40px 40px 40px;
+
+    	.btn-default {
+			background: $bg-white-button;
+			border-color: $bg-white-button;
+			color: button-text-color( $bg-white-button );
+		}
+
+	.btn-default:active:focus {
+			background: $bg-white-button;
+			border-color: $bg-white-button;
+			color: button-text-color( $bg-white-button );
+		}
+    }
+}
+
+.second-section {
+	background-image: url('/assets/images/man_talking.jpg');
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    height: 550px;
+
+    p {
+    	font-size: 16px;
+    	line-height: 1.8;
+    }
+}
+
+.bg-black-background {
+	background: $bg-black-background;
+    color: $bg-black-color;
+
+    h1, 
+    h2, 
+    h3, 
+    h4, 
+    h5,
+    h6 {
+    	color: $bg-black-headings-color;
+    }
+
+    hr {
+    	border-top: 1px solid $bg-black-color;
+    }
+}
+
+.services-box {
+	padding: 40px 80px;
+    margin: 20px 0 30px 0;
+
+    &:hover{
+    	-webkit-transition: all 0.8s ease-out;
+	    -moz-transition: all 0.8s ease-out;
+	    -ms-transition: all 0.8s ease-out;
+	    -o-transition: all 0.8s ease-out;
+	    transition: all 0.8s ease-out;
+	    transform: scale(1.08);
+    }
+
+	&-blue {
+
+		background: $brand-primary;
+		color: button-text-color( $brand-primary );
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5, 
+		h6 { 
+			font-weight: 500;
+		}
+
+
+	}
+
+	&-white {
+		background: $bg-white-button;
+		
+		h1,
+		h2,
+		h3,
+		h4,
+		h5, 
+		h6 { 
+			color: $gray-dark;
+			font-weight: 500;
+		}
+	}
+}
+
+.service-features {
+	overflow: hidden;
+    background: white;
+ 
+    &-tabs {
+    	padding-left: 16%;
+    	padding-right: 4%;
+    }
+
+    &-bg-brand {
+    	background: $brand-primary;
+    }
+
+    .list-group-item {
+    	padding: 20px 30px;
+
+    	i.fa {
+    		margin-top: 8px;
+    	}
+    }
+
+    .feature-1 {
+    	background-image: url('/assets/images/quality_assurance.jpg');
+        background-position: 0% 0%;
+	    background-repeat: no-repeat;
+	    height: 750px;
+	    background-size: initial;
+	    background-origin: content-box;
+	    padding: 0px;
+	    margin-left: -15px;
+	    padding-top: 60px;
+    }
+}
+
+
+
+.fith-section {
+	background-image: url('/assets/images/using_ipad.jpg');
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    height: 450px;
+    color: button-text-color( $brand-primary );
+
+    &-text {
+    	background: transparentize($brand-primary, .15);
+	    margin: 30% 0 30% 0;
+		padding: 20px 40px 40px 40px;
+    }
+
+    h1,
+		h2,
+		h3,
+		h4,
+		h5, 
+		h6 { 
+			color: button-text-color( $brand-primary );
+			font-weight: 500;
+		}
+
+}
+
