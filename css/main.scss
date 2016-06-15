@@ -215,17 +215,24 @@ h6 {
     	background: $brand-primary;
     }
 
+    .list-group-item:first-of-type {
+    	border-top: 2px solid #eee;
+    }
+
     .list-group-item {
-    	padding: 20px 30px;
+    	padding: 30px 30px;
+    	border-bottom: 2px solid #eee;
+    	border-right: none;
+    	border-left: none;
+    	border-top: none;
 
     	i.fa {
     		margin-top: 8px;
     	}
     }
 
-    .feature-1 {
-    	background-image: url('/assets/images/quality_assurance.jpg');
-        background-position: 0% 0%;
+    .feature-tab {
+    	background-position: 0% 0%;
 	    background-repeat: no-repeat;
 	    height: 750px;
 	    background-size: initial;
@@ -233,7 +240,20 @@ h6 {
 	    padding: 0px;
 	    margin-left: -15px;
 	    padding-top: 60px;
+
     }
+
+    .feature-1 {
+		background-image: url('/assets/images/quality_assurance.jpg');
+    }
+    .feature-2 {
+    	background-image: url('/assets/images/quality_assurance_2.jpg');
+    }
+    .feature-3 {
+    	background-image: url('/assets/images/quality_assurance_3.jpg');
+    }
+
+    
 }
 
 
