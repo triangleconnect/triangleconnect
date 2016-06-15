@@ -229,7 +229,45 @@ h6 {
     	i.fa {
     		margin-top: 8px;
     	}
+
+    	&:hover {
+    		background-color: #f7f5f5;
+    	}
+
+    	a {
+    		color: $gray-dark;
+
+    		&:focus {
+	    		text-decoration: none;
+	    	}
+
+	    	&:hover {
+	    		text-decoration: none;
+	    	}
+    	}
     }
+
+
+    .list-group-item.active {
+    	background-color: $bg-white-button;
+
+    	a {
+    		color: $gray-dark;
+    	}
+
+    	i {
+	    	color: $brand-primary;
+	    }
+
+    	&:hover {
+    		text-decoration: none;
+    	}
+
+    	&:focus {
+    		text-decoration: none;
+    	}
+    }
+
 
     .feature-tab {
     	background-position: 0% 0%;
