@@ -2,30 +2,29 @@
 layout: blank
 ---
 <header class="hero">
-<nav class="navbar navbar-inverse">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/"><img src="/assets/images/triangle-connect-logo-white.png" alt="{{ site.title }}" /></a>
-        </div>
-        {% include nav-main.html %}
+  <nav class="navbar navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"><img src="/assets/images/triangle-connect-logo-white.png" alt="{{ site.title }}" /></a>
       </div>
-    </nav>
-
-    <div class="row">
-        <div class="col-md-4 col-md-offset-6">
-          <div class="hero-text">
-            <h1>Modern Technology for modern marketing</h1>
-            <p class="lead">Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>
-            <a href="#" class="btn btn-default">Contact us today to get started.</a>
-          </div>
-        </div>
+      {% include nav-main.html %}
     </div>
+  </nav>
+  <div class="row">
+      <div class="col-md-4 col-md-offset-6">
+        <div class="hero-text">
+          <h1>Modern Technology for modern marketing</h1>
+          <p class="lead">Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>
+          <a href="#" class="btn btn-default">Contact us today to get started.</a>
+        </div>
+      </div>
+  </div>
 </header>
 <section class="second-section">
   <div class="container">
@@ -33,7 +32,6 @@ layout: blank
       <div class="col-md-5 col-md-offset-1 m-t-120">
         <h3>Donec eu libero sit amet quam egestas</h3>
         <p>Your call center has so many moving parts, that it can be difficult to keep an eye on everything from agent performance and customer service calls to sales metrics and issues with your network.</p>
-
         <p>With Triangle Connect, you get real insight into every aspect of your marketing call center—through powerful analytics, real-time data visualizations and customizable software that lets you focus on what matters most for your business.</p>
       </div>
     </div>
@@ -125,26 +123,50 @@ layout: blank
 </section>
 <section>
   <div class="container">
-  <div class="row p-t-60">
-    <div class="col-md-12 text-center">
-      <h3>Lorem ipsum dolor sit</h3>
+    <div class="row p-t-60">
+      <div class="col-md-12 text-center">
+        <h3>Lorem ipsum dolor sit</h3>
+      </div>
     </div>
-  </div>
-    <div class="row p-t-60 p-b-100">
-      {% for post in site.posts %}
-        <div class="col-md-4 blog-posts">
-          <a href="{{ post.url }}">
-            <div class="panel panel-default">
-              <img src="{{ post.image }}" class="img-responsive" alt="{{ post.title }}" />
-              <div class="panel-body">
-                <h4>{{ post.title }}</h4>
-                {{ post.excerpt | truncatewords: 30 }}
+      <div class="row p-t-60 p-b-60">
+        {% for post in site.posts %}
+          <div class="col-md-4 blog-posts">
+            <a href="{{ post.url }}">
+              <div class="panel panel-default">
+                <img src="{{ post.image }}" class="img-responsive" alt="{{ post.title }}" />
+                <div class="panel-body">
+                  <h4>{{ post.title }}</h4>
+                  {{ post.excerpt | truncatewords: 30 }}
+                </div>
               </div>
-            </div>
-          </a>
-        </div>
-      {% endfor %}
-  </div>
+            </a>
+          </div>
+        {% endfor %}
+    </div>
+    <div class="row p-b-80">
+      <hr class="hr-fat">
+      <div class="partner-logo-container">
+        <img src="/assets/images/partners/logo_yahoo.png" />
+      </div>
+      <div class="partner-logo-container">
+        <img src="/assets/images/partners/logo_skype.png" />
+      </div>
+      <div class="partner-logo-container">
+        <img src="/assets/images/partners/logo_intel.png" />
+      </div>
+      <div class="partner-logo-container">
+        <img src="/assets/images/partners/logo_ubuntu.png" />
+      </div>
+      <div class="partner-logo-container">
+        <img src="/assets/images/partners/logo_google.png" />
+      </div>
+      <div class="partner-logo-container">
+        <img src="/assets/images/partners/logo_bing.png" />
+      </div>
+      <div class="partner-logo-container">
+        <img src="/assets/images/partners/logo_ubuntu.png" />
+      </div>
+    </div>
   </div>
 </section>
 {% include footer-cta-section.html %}
