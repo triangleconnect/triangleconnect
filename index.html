@@ -24,8 +24,6 @@ layout: blank
             <p class="lead">Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>
             <a href="#" class="btn btn-default">Contact us today to get started.</a>
           </div>
-          
-      </div>
         </div>
     </div>
 </header>
@@ -137,7 +135,7 @@ layout: blank
         <div class="col-md-4 blog-posts">
           <a href="{{ post.url }}">
             <div class="panel panel-default">
-              <img src="{{ post.image }}" class="img-responsive" />
+              <img src="{{ post.image }}" class="img-responsive" alt="{{ post.title }}" />
               <div class="panel-body">
                 <h4>{{ post.title }}</h4>
                 {{ post.excerpt | truncatewords: 30 }}
