@@ -1,0 +1,30 @@
+---
+layout: blank
+hero-background: '/assets/images/services-banner.jpg'
+---
+<header class="hero" style="background-image: url('{{ page.hero-background }}');">
+  <nav class="navbar navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"><img src="/assets/images/triangle-connect-logo-white.png" alt="{{ site.title }}" /></a>
+      </div>
+      {% include nav-main.html %}
+    </div>
+  </nav>
+  <div class="row">
+      <div class="col-md-8 col-md-offset-2 text-center p-80">
+          <h1>Customer service, simplified.</h1>
+          <p class="lead">Say hello to modern, worry-free call center services.</p>
+      </div>
+  </div>
+</header>
+
+{% include footer-cta-section.html %}
+
+{% include footer.html %}
