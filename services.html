@@ -2,6 +2,8 @@
 layout: blank
 title: Services
 hero-background: '/assets/images/services-banner.jpg'
+hero-title: 'Customer service, simplified.'
+hero-content: 'Say hello to modern, worry-free call center services.'
 ---
 <header class="hero" style="background-image: url('{{ page.hero-background }}');">
   <nav class="navbar navbar-inverse">
@@ -20,8 +22,8 @@ hero-background: '/assets/images/services-banner.jpg'
   </nav>
   <div class="row">
       <div class="col-md-8 col-md-offset-2 text-center p-80">
-          <h1>Customer service, simplified.</h1>
-          <p class="lead">Say hello to modern, worry-free call center services.</p>
+          <h1>{{ page.hero-title }}</h1>
+          <p class="lead">{{ page.hero-content }}</p>
       </div>
   </div>
   <div class="row services-list" style="background:rgba(0, 0, 0, 0.32);">
