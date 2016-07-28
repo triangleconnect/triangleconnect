@@ -2,3 +2,19 @@
 <script src="/js/jquery/jquery.min.js"></script>
 <!-- Bootstrap Core JavaScript -->
 <script src="/js/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript">
+$( document ).ready(function() {
+	var offsetheight = 200;
+    $('body').scrollspy({
+    	offset: offsetheight,
+    	target: '#services-navbar'
+
+    });
+    console.log('howdy!');
+    $('#services-list-wrapper').affix({
+	      offset: {
+	        top: $('header').height()
+	      }
+	});
+});
+</script>

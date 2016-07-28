@@ -34,6 +34,7 @@ $bg-white-button: #FFFFFF;
 body {
   overflow-x: hidden;
   font-size: 16px;
+  position: relative;
 }
 
 h1,
@@ -102,6 +103,9 @@ h6 {
     	color: #FFFFFF;
     	font-size: 36px;
     	font-weight: 500;
+    }
+    p {
+      font-weight: 500;
     }
 
     .lead {
@@ -373,10 +377,26 @@ h6 {
 
 /* ------- services page -------- */
 
+.services-list-wrapper {
+  background: rgba(0, 0, 0, 0.32);
+}
+
+.services-list-wrapper.affix {
+  top:0; 
+  width: 100%;
+  z-index: 10000;
+
+  a {
+    height: 100px;
+    padding: 0px 15px;
+  }
+}
+
 .services-hero-list {
   display: table;
   height: 1px;
   width: 100%;
+
   
   li {
     display: table-cell;
@@ -392,11 +412,18 @@ h6 {
     height: 140px;
     padding: 10px 0 0 0;
     margin-bottom: -10px;
-    padding-top: 25px !important;
+    padding-top: 25px;
   }
   li a:hover, li a:focus {
     background-color: $brand-primary;
     text-decoration: none;
+  }
+  li.active a {
+    background-color: $brand-primary;
+    color: #fff;
+  }
+  .nav>li>a {
+    padding-top: 25px;
   }
 }
 

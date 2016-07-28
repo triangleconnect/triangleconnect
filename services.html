@@ -26,46 +26,49 @@ hero-content: 'Say hello to modern, worry-free call center services.'
           <p class="lead">{{ page.hero-content }}</p>
       </div>
   </div>
-  <div class="row services-list" style="background:rgba(0, 0, 0, 0.32);">
+  <div id="services-list-wrapper" class="row services-list-wrapper">
     <div class="container">
       <div class="col-md-10 col-md-offset-1">
-        <ul class="list-unstyled services-hero-list nav nav-pills nav-justified">
-          <li>
-            <a href="#">
-              <img src="/assets/images/icons/icon_inbound-outbound-services.png" alt="" />
-              <p>Inbound/Outbound Services</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="/assets/images/icons/icon_qualitycontrol.png" alt="" />
-              <p>Quality Control</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="/assets/images/icons/icon_campaign-management.png" alt="" />
-              <p>Campaign Management</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="/assets/images/icons/icon_customer-data-optimization.png" alt="" />
-              <p>Customer/Data Optimization</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="/assets/images/icons/icon_email-chat-supprt.png" alt="" />
-              <p>Email/Chat Support</p>
-            </a>
-          </li>
-        </ul>  
+        <div id="services-navbar" class="">
+          <ul class="nav list-unstyled services-hero-list nav-justified">
+            <li>
+              <a href="#inbound">
+                <img src="/assets/images/icons/icon_inbound-outbound-services.png" alt="" />
+                <p>Inbound/Outbound Services</p>
+              </a>
+            </li>
+            <li>
+              <a href="#qualitycontrol">
+                <img src="/assets/images/icons/icon_qualitycontrol.png" alt="" />
+                <p>Quality Control</p>
+              </a>
+            </li>
+            <li>
+              <a href="#campaignmanagement">
+                <img src="/assets/images/icons/icon_campaign-management.png" alt="" />
+                <p>Campaign Management</p>
+              </a>
+            </li>
+            <li>
+              <a href="#optimization">
+                <img src="/assets/images/icons/icon_customer-data-optimization.png" alt="" />
+                <p>Customer/Data Optimization</p>
+              </a>
+            </li>
+            <li>
+              <a href="#support">
+                <img src="/assets/images/icons/icon_email-chat-supprt.png" alt="" />
+                <p>Email/Chat Support</p>
+              </a>
+            </li>
+          </ul>  
+        </div>
       </div>
     </div>
   </div>
 </header>
-<section>
+<div class="scrollspy-example" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+<section id="inbound">
   <div class="container">
     <div class="row p-t-60 p-b-60">
       <div class="col-md-5 col-md-offset-1">
@@ -78,7 +81,7 @@ hero-content: 'Say hello to modern, worry-free call center services.'
     </div>
   </div>
 </section>
-<section>
+<section id="qualitycontrol">
   <div class="container">
     <div class="row p-t-60 p-b-60">
       <div class="col-md-5 col-md-offset-1">
@@ -91,7 +94,7 @@ hero-content: 'Say hello to modern, worry-free call center services.'
     </div>
   </div>
 </section>
-<section>
+<section id="campaignmanagement">
   <div class="container">
     <div class="row p-t-60 p-b-60">
       <div class="col-md-5 col-md-offset-1">
@@ -104,7 +107,7 @@ hero-content: 'Say hello to modern, worry-free call center services.'
     </div>
   </div>
 </section>
-<section>
+<section id="optimization">
   <div class="container">
     <div class="row p-t-60 p-b-60">
       <div class="col-md-5 col-md-offset-1">
@@ -117,7 +120,7 @@ hero-content: 'Say hello to modern, worry-free call center services.'
     </div>
   </div>
 </section>
-<section>
+<section id="support">
   <div class="container">
     <div class="row p-t-60 p-b-60">
       <div class="col-md-5 col-md-offset-1">
@@ -130,6 +133,7 @@ hero-content: 'Say hello to modern, worry-free call center services.'
     </div>
   </div>
 </section>
+</div>
 {% include footer-cta-section.html %}
 
 {% include footer.html %}
