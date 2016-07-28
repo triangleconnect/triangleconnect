@@ -6,14 +6,12 @@
 $( document ).ready(function() {
 	var offsetheight = 200;
     $('body').scrollspy({
+    	target: '#services-navbar',
     	offset: offsetheight,
-    	target: '#services-navbar'
-
     });
-    console.log('howdy!');
     $('#services-list-wrapper').affix({
 	      offset: {
-	        top: $('header').height()
+	        top: $('header').height(),
 	      }
 	});
 });

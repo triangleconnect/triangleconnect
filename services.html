@@ -26,11 +26,11 @@ hero-content: 'Say hello to modern, worry-free call center services.'
           <p class="lead">{{ page.hero-content }}</p>
       </div>
   </div>
-  <div id="services-list-wrapper" class="row services-list-wrapper">
+  <div id="services-list-wrapper" class="row services-list-wrapper" data-spy="affix" data-offset-top="200">
     <div class="container">
       <div class="col-md-10 col-md-offset-1">
         <div id="services-navbar" class="">
-          <ul class="nav list-unstyled services-hero-list nav-justified">
+          <ul class="nav list-unstyled services-hero-list nav-justified"   >
             <li>
               <a href="#inbound">
                 <img src="/assets/images/icons/icon_inbound-outbound-services.png" alt="" />
@@ -67,7 +67,6 @@ hero-content: 'Say hello to modern, worry-free call center services.'
     </div>
   </div>
 </header>
-<div class="scrollspy-example" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
 <section id="inbound">
   <div class="container">
     <div class="row p-t-60 p-b-60">
@@ -133,7 +132,6 @@ hero-content: 'Say hello to modern, worry-free call center services.'
     </div>
   </div>
 </section>
-</div>
 {% include footer-cta-section.html %}
 
 {% include footer.html %}
