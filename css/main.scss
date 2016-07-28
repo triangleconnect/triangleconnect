@@ -394,7 +394,7 @@ h6 {
     margin-bottom: -10px;
     padding-top: 25px !important;
   }
-  li a:hover {
+  li a:hover, li a:focus {
     background-color: $brand-primary;
     text-decoration: none;
   }
