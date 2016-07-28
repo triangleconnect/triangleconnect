@@ -363,6 +363,37 @@ h6 {
     text-align: center;
 }
 
+
+
+/* ------- services page -------- */
+
+.services-hero-list {
+  display: table;
+  height: 1px;
+  width: 100%;
+  
+  li {
+    display: table-cell;
+    width: 20%;
+    float: left;
+    text-align: center;
+    height: 100%;
+  }
+  a {
+    color: #fff;
+    position: relative;
+    display: block;
+    height: 140px;
+    padding: 10px 0 0 0;
+    margin-bottom: -10px;
+    padding-top: 25px;
+  }
+  li a:hover {
+    background-color: $brand-primary;
+    text-decoration: none;
+  }
+}
+
 /* ------- pagination -------- */
 
 .pagination {
