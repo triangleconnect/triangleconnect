@@ -108,22 +108,28 @@ h6 {
     	font-size: 18px;
     }
 
-    &-text {
+    &-box {
     	background: transparentize($brand-primary, .15);
 	    margin: 30% 0 30% 0;
-		padding: 20px 40px 40px 40px;
+		  padding: 20px 40px 40px 40px;
 
     	.btn-default {
-			background: $bg-white-button;
-			border-color: $bg-white-button;
-			color: button-text-color( $bg-white-button );
-		}
+  			background: $bg-white-button;
+  			border-color: $bg-white-button;
+  			color: button-text-color( $bg-white-button );
+  		}
 
-	.btn-default:active:focus {
-			background: $bg-white-button;
-			border-color: $bg-white-button;
-			color: button-text-color( $bg-white-button );
-		}
+    	.btn-default:active:focus {
+    			background: $bg-white-button;
+    			border-color: $bg-white-button;
+    			color: button-text-color( $bg-white-button );
+    		}
+    }
+    &-row {
+      background: transparentize($brand-primary, .15);
+      padding: 30px;
+      margin-bottom: 10%;
+
     }
 }
 
