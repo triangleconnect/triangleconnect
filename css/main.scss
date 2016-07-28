@@ -33,6 +33,7 @@ $bg-white-button: #FFFFFF;
 // fix bootstrap bug
 body {
   overflow-x: hidden;
+  font-size: 16px;
 }
 
 h1,
@@ -42,6 +43,7 @@ h4,
 h5,
 h6 {
 	color:	$brand-primary;
+  font-weight: 400;
 }
 
 
