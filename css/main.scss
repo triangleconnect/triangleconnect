@@ -100,7 +100,7 @@ h6 {
 
     h1 {
     	color: #FFFFFF;
-    	font-size: 30px;
+    	font-size: 36px;
     	font-weight: 500;
     }
 
@@ -375,7 +375,7 @@ h6 {
   li {
     display: table-cell;
     width: 20%;
-    float: left;
+    float: none;
     text-align: center;
     height: 100%;
   }
@@ -386,7 +386,7 @@ h6 {
     height: 140px;
     padding: 10px 0 0 0;
     margin-bottom: -10px;
-    padding-top: 25px;
+    padding-top: 25px !important;
   }
   li a:hover {
     background-color: $brand-primary;
