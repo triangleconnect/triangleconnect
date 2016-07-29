@@ -379,16 +379,22 @@ h6 {
 
 .services-list-wrapper {
   background: rgba(0, 0, 0, 0.32);
+  height: 140px;
+  
 }
 
 .services-list-wrapper.affix {
   top:0; 
   width: 100%;
   z-index: 10000;
-
+  height: 100px;
   a {
     height: 100px;
     padding: 0px 15px;
+  }
+
+  .services-hero-list.nav>li>a {
+    padding-top: 0px;
   }
 }
 
@@ -422,7 +428,7 @@ h6 {
     background-color: $brand-primary;
     color: #fff;
   }
-  .nav>li>a {
+  &.nav>li>a {
     padding-top: 25px;
   }
 }

@@ -4,15 +4,26 @@
 <script src="/js/bootstrap/bootstrap.min.js"></script>
 <script type="text/javascript">
 $( document ).ready(function() {
-	var offsetheight = 200;
     $('body').scrollspy({
     	target: '#services-navbar',
-    	offset: offsetheight,
+    	offset: 100,
     });
     $('#services-list-wrapper').affix({
 	      offset: {
-	        top: $('header').height(),
+	        top: $('header').height() - 120,
 	      }
+	});
+
+	$("#services-list-wrapper ul li a[href^='#']").on('click', function(e) {
+	   e.preventDefault();
+	   var hash = this.hash;
+	   // animate
+	   $('html, body').animate({
+	       scrollTop: $(hash).offset().top
+	     }, 300, function(){
+	       window.location.hash = hash;
+	     });
+
 	});
 });
 </script>
