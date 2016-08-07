@@ -302,13 +302,16 @@ h6 {
     }
 
     .feature-1 {
-		background-image: url('/assets/images/quality_assurance.jpg');
+		  background-image: url('/assets/images/quality_assurance.jpg');
+      max-width: 596px;
     }
     .feature-2 {
-    	background-image: url('/assets/images/quality_assurance_2.jpg');
+    	background-image: url('/assets/images/marketing-insights.jpg');
+      max-width: 596px;
     }
     .feature-3 {
-    	background-image: url('/assets/images/quality_assurance_3.jpg');
+    	background-image: url('/assets/images/simplified-financials.jpg');
+      max-width: 596px;
     }
 
     
