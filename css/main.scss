@@ -79,6 +79,9 @@ h6 {
 
 }
 
+.navbar {
+  min-height: 72px;
+}
 
 .hero {
 	height: 100%;
@@ -494,4 +497,10 @@ h6 {
 
 a.decoration-none:hover{
   text-decoration: none;
+}
+
+@media (max-width: 768px) { 
+  .partner-logo-container {
+    width: 100%;
+  }
 }
